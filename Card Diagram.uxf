@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1220</x>
+      <y>210</y>
+      <w>280</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Card
+--
+- backImage : UIImage
+- isFaceUp : Boolean
+-
++ init()
++ getBackImage() : UImage
++ isFaceUp() : Bool
++ toString() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>30</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Pakage :: Class
+-
+Data Members
+
+-
+Constructors and Methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>210</y>
+      <w>280</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: PlayingCard
+--
+- suit : String
+- color : UIColor
+- rank : int
+- frontImage : UIImage
+-
++ get/set
++ init</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>500</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
