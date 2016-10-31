@@ -15,6 +15,7 @@
 		C9B330DF1DBFAE3C00273D61 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B330DE1DBFAE3C00273D61 /* Card.swift */; };
 		C9B330E11DBFAE7100273D61 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B330E01DBFAE7100273D61 /* PlayingCard.swift */; };
 		C9DAC7C11DC789AF0080CCF6 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAC7C01DC789AF0080CCF6 /* PlayingCardDeck.swift */; };
+		C9DAC7C31DC78AF20080CCF6 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DAC7C21DC78AF20080CCF6 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C9B330DE1DBFAE3C00273D61 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		C9B330E01DBFAE7100273D61 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 		C9DAC7C01DC789AF0080CCF6 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		C9DAC7C21DC78AF20080CCF6 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C9B330DE1DBFAE3C00273D61 /* Card.swift */,
 				C9B330E01DBFAE7100273D61 /* PlayingCard.swift */,
 				C9DAC7C01DC789AF0080CCF6 /* PlayingCardDeck.swift */,
+				C9DAC7C21DC78AF20080CCF6 /* Deck.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DAC7C31DC78AF20080CCF6 /* Deck.swift in Sources */,
 				C99D59561DC2515F00485F54 /* CardGameController.swift in Sources */,
 				C9B330DF1DBFAE3C00273D61 /* Card.swift in Sources */,
 				C9DAC7C11DC789AF0080CCF6 /* PlayingCardDeck.swift in Sources */,
