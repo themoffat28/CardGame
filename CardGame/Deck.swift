@@ -13,7 +13,19 @@ class Deck
     lazy var cards = [Card]()
     
     func shuffleDeck() -> Void
-    { }
+    {
+        var tempDeck = [Card]()
+        
+        while cards.count > 0
+        {
+            //Chooses a random valid index in the range of 0-cards.count-1.
+            let randomSpot = Int (arc4random() % UInt32(cards.count))
+            //Takes card from random spot in the deck. Deck then decreases in count.
+            let removedCard = cards.removeAtIndex(randomSpot)
+            tempDeck.append(removedCard)
+        }
+        cards = tempDeck
+    }
     
     func cutDeck() -> Void
     { }
@@ -34,4 +46,5 @@ class Deck
     {
         
     }
+    
 }
