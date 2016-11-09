@@ -74,4 +74,10 @@ class PlayingCard : Card
     {
         return ["♥️","♣️","♦️","♠️"]
     }
+    
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
+    }
 }

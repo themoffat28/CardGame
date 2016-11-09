@@ -16,23 +16,23 @@ class Deck
     {
         var tempDeck = [Card]()
         
-        while cards.count > 0
+        while self.cards.count > 0
         {
             //Chooses a random valid index in the range of 0-cards.count-1.
             let randomSpot = Int (arc4random() % UInt32(cards.count))
             //Takes card from random spot in the deck. Deck then decreases in count.
-            let removedCard = cards.removeAtIndex(randomSpot)
+            let removedCard = self.cards.removeAtIndex(randomSpot)
             tempDeck.append(removedCard)
         }
-        cards = tempDeck
+        self.cards = tempDeck
     }
     
     func cutDeck() -> Void
     { }
     
-    func drawCard() -> Card!
+    func drawCard() -> Card?
     {
-        if cards.count > 0
+        if self.cards.count > 0
         {
             return cards.removeAtIndex(0)
         }
@@ -44,7 +44,15 @@ class Deck
     
     func drawRandomCard() -> Card!
     {
-        
+        if cards.count > 0
+        {
+            let randomIndex = (Int)(arc4random() % (UInt32) (cards.count))
+            return cards.removeAtIndex(randomIndex)
+        }
+        else
+        {
+            return nil
+        }
     }
     
 }
