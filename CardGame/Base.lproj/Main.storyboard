@@ -17,20 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-rV-7gE">
-                                <rect key="frame" x="0.0" y="92" width="600" height="508"/>
-                                <state key="normal" backgroundImage="CardBack"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvu-lY-FdB">
-                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvu-lY-FdB">
+                                <rect key="frame" x="0.0" y="20" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-DU-l5K">
-                                <rect key="frame" x="-67" y="92" width="600" height="516"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-DU-l5K">
+                                <rect key="frame" x="0.0" y="61" width="455" height="539"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
-                                <state key="normal" title="TEXT" backgroundImage="CardBack">
+                                <state key="normal" backgroundImage="CardBack">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -39,18 +35,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="KHH-rV-7gE" firstAttribute="top" secondItem="RpG-DU-l5K" secondAttribute="top" id="6Bz-hY-ZTa"/>
-                            <constraint firstItem="RpG-DU-l5K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mgl-8a-NI2"/>
-                            <constraint firstItem="KHH-rV-7gE" firstAttribute="leading" secondItem="RpG-DU-l5K" secondAttribute="leading" id="Phg-KW-XWa"/>
-                            <constraint firstItem="Uvu-lY-FdB" firstAttribute="centerX" secondItem="KHH-rV-7gE" secondAttribute="centerX" id="RYe-Z2-6ha"/>
-                            <constraint firstItem="KHH-rV-7gE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="WSM-XD-gEB"/>
-                            <constraint firstItem="Uvu-lY-FdB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a4d-Qe-S7d"/>
-                            <constraint firstAttribute="trailing" secondItem="KHH-rV-7gE" secondAttribute="trailing" id="ci1-nc-FSU"/>
-                            <constraint firstItem="KHH-rV-7gE" firstAttribute="trailing" secondItem="RpG-DU-l5K" secondAttribute="trailing" id="cvO-sn-8Nt"/>
-                            <constraint firstItem="RpG-DU-l5K" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dsE-z5-BsN"/>
-                            <constraint firstItem="KHH-rV-7gE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fko-yI-pi7"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="CardButton" destination="RpG-DU-l5K" id="d6b-QZ-Tzu"/>
@@ -63,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CardBack" width="550" height="779"/>
+        <image name="CardBack" width="200" height="283"/>
     </resources>
 </document>
