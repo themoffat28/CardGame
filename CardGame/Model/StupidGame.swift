@@ -10,31 +10,12 @@ import Foundation
 
 class StupidGame
 {
-    //Declaratiion Section
-    internal var score : Int
-    internal var discardPile : Int
-    internal var winnersPile : Int
-    internal var drawingDeck : PlayingCardDeck
-    internal var hand : Int
-    
-    
-    //inits
-    init()
-    {
-        self.score = 0
-        self.discardPile = Int()
-        self.winnersPile = Int()
-        self.drawingDeck = PlayingCardDeck()
-        self.hand = Int()
-    }
-    
-    //Method
-    func startGame() -> Void
-    {
-        drawingDeck.shuffleDeck()
-        hand.append((drawingDeck.drawCard() as? PlayingCardDeck)
-        
-    }
-    
-    
+    private var deck = PlayingCardDeck()
+    private var hard = [PlayingCard]()
+    private var matches = [PlayingCard}()
+
+    func checkMatch (var hand: [PlayingCard[) -> Bool
+        {
+            for outerIndex in 0.<hand.count
+        }
 }
