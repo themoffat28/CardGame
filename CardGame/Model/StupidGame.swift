@@ -8,7 +8,7 @@
 
 import Foundation
 
-    class StupidGame
+class StupidGame
 {
         //Declaration section
         internal var score : Int
@@ -36,42 +36,45 @@ import Foundation
         drawCards()
     }
         
-        private func drawCards() -> Void
-        {
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
-        }
+    private func drawCards() -> Void
+    {
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+    }
         
-        func checkMatch() -> Int
+    func checkMatch() -> Int
+    {
+        var points = Int()
+        let tempCount = hand.count
+        for var outer in 0..<tempCount
         {
-            var points = Int()
-            for(var OuterLoop = 0; OuterLoop < hand.count; OuterLoop += 1)
+            for var inner in 0..<tempCount
             {
-                let handSize = hand.count
-                for(var InnerLoop = 0; InnerLoop < hand.count; InnerLoop += 1)
+                if(outer != inner) && hand[outer].rank == hand[inner].rank
                 {
-                    if(OuterLoop != InnerLoop && hand[OuterLoop].rank == hand[InnerLoop].rank)
-                    {
-                        hand.removeAtIndex(InnerLoop)
-                        points += 2
-                        InnerLoop -= 1
-                    }
-                }
-                if(handSize != hand.count)
-                {
-                    hand.removeAtIndex(OuterLoop)
+                    hand.remove(at: inner)
                     points += 2
-                    OuterLoop -= 1
+                    inner -= 1
                 }
             }
-            let negativePoints = hand.count
-            return points - negativePoints
+            
+            if(hand.count != tempCount)
+            {
+                hand.remove(at: outer)
+                points += 2
+                outer -= 1
+            }
+            
         }
+        
+        let negativePoints = hand.count
+        return points - negativePoints
+    }
 
     func playMatchGame() -> Void
     {
